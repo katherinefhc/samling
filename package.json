@@ -34,6 +34,7 @@
   },
   "main": "samling.js",
   "scripts": {
+    "start": "node server.js",
     "prepare": "mkdir -p public/js",
     "bootstrap": "cp -r node_modules/bootstrap/dist/* public/",
     "jquery": "cp -r node_modules/jquery/dist/* public/js/",
@@ -42,5 +43,8 @@
     "build": "npm run prepare && npm run bootstrap && npm run jquery && npm run forge && npm run browser",
     "serve": "http-server -p 8888 ."
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
