@@ -1,5 +1,3 @@
-// shamelessly copied (and modified) from https://github.com/auth0/node-saml
-
 var crypto = require('crypto');
 var zlib = require('zlib');
 var fs = require('fs');
@@ -37,7 +35,7 @@ var algorithms = {
 };
 
 exports.parseRequest = function(options, request, callback) {
-  options.issuer = options.issuer || 'https://capriza.github.io/samling/samling.html';
+  options.issuer = options.issuer || 'https://samling.herokuapp.com';
   request = decodeURIComponent(request);
   var buffer = new Buffer(request, 'base64');
   zlib.inflateRaw(buffer, function(err, result) {

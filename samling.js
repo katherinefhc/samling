@@ -164,7 +164,7 @@ $(function() {
     cert.validity.notAfter.setFullYear(cert.validity.notBefore.getFullYear() + 1);
     var attrs = [{
       name: 'commonName',
-      value: 'capriza.com'
+      value: 'samling.herokuapp.com'
     }, {
       name: 'countryName',
       value: 'US'
@@ -213,7 +213,7 @@ $(function() {
       name: 'subjectAltName',
       altNames: [{
         type: 6, // URI
-        value: 'http://capriza.com/samling'
+        value: 'https://samling.herokuapp.com'
       }]
     }, {
       name: 'subjectKeyIdentifier'
@@ -359,6 +359,10 @@ $(function() {
     var form = $('#samlResponseForm')[0];
     form.action = callbackUrl;
     form.submit();
+  });
+
+  $('#nameIdentifier').change(function(event) {
+    console.log({ event });
   });
 
   if (queryParams['SAMLRequest']) {
