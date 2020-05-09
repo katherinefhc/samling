@@ -34,14 +34,7 @@
   },
   "main": "samling.js",
   "scripts": {
-    "start": "node server.js",
-    "prepare": "mkdir -p public/js",
-    "bootstrap": "cp -r node_modules/bootstrap/dist/* public/",
-    "jquery": "cp -r node_modules/jquery/dist/* public/js/",
-    "forge": "cd node_modules/node-forge && npm install && npm run bundle && cp js/forge.bundle.js ../../public",
-    "browser": "browserify -g brfs samling.js | sed \"s/require[(]'node-forge'[)]/window.forge/g\" > public/bundle.js",
-    "build": "npm run prepare && npm run bootstrap && npm run jquery && npm run forge && npm run browser",
-    "serve": "http-server -p 8888 ."
+    "start": "node index.js"
   },
   "license": "MIT",
   "dependencies": {
