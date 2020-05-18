@@ -164,7 +164,7 @@ $(function() {
     cert.validity.notAfter.setFullYear(cert.validity.notBefore.getFullYear() + 1);
     var attrs = [{
       name: 'commonName',
-      value: 'samling.herokuapp.com'
+      value: 'samling-local.herokuapp.com'
     }, {
       name: 'countryName',
       value: 'US'

@@ -35,7 +35,7 @@ var algorithms = {
 };
 
 exports.parseRequest = function(options, request, callback) {
-  options.issuer = options.issuer || 'https://samling.herokuapp.com';
+  options.issuer = options.issuer || 'https://samling-local.herokuapp.com';
   request = decodeURIComponent(request);
   var buffer = new Buffer(request, 'base64');
   zlib.inflateRaw(buffer, function(err, result) {
