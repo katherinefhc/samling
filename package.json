@@ -2,25 +2,6 @@
   "name": "samling",
   "version": "0.3.0",
   "description": "Serverless SAML testing",
-  "author": "Capriza Inc. <backend@capriza.com>",
-  "maintainers": [
-    "Nadav Fischer <nadav.fischer@capriza.com>",
-    "Yuval Carmel <yuval.carmel@capriza.com>"
-  ],
-  "homepage": "http://github.com/capriza/samling",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/capriza/samling.git"
-  },
-  "bugs": {
-    "url": "https://github.com/capriza/samling/issues"
-  },
-  "keywords": [
-    "SAML",
-    "saml",
-    "idp",
-    "testing"
-  ],
   "devDependencies": {
     "bootstrap": "3.3.6",
     "brfs": "1.4.3",

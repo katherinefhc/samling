@@ -99,7 +99,7 @@
                 <input type="text"
                        class="form-control"
                        id="callbackUrl"
-                       value="https://docker.for.mac.localhost/api/saml/callback">
+                       value="http://localhost:8080/api/saml/callback">
               </div>
               <div class="form-group hide">
                 <label class="control-label"
@@ -140,6 +140,14 @@
                        class="form-control"
                        id="issuer"
                        value="https://samling-local.herokuapp.com">
+              </div>
+              <div class="form-group">
+                <label class="control-label"
+                       for="issuer">Referrer / Header Origin</label>
+                <input type="text"
+                       class="form-control"
+                       id="origin"
+                       value="samling-local.herokuapp.com">
               </div>
               <div class="form-group hide">
                 <label class="control-label"

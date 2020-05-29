@@ -348,6 +348,8 @@ $(function() {
       nameIdentifier: $('#nameIdentifier').val().trim(),
       callbackUrl: $('#callbackUrl').val().trim(),
       issuer: $('#issuer').val().trim(),
+      origin: $('#origin').val().trim(),
+      referrer: $('#origin').val().trim(),
       authnContextClassRef: $('#authnContextClassRef').val().trim(),
       nameIdentifierFormat: $('#nameIdentifierFormat').val().trim(),
       attributes: $('#samlAttributes').val().trim()
