@@ -63,12 +63,12 @@ function handleRequest(request, relayState) {
     // auto-login if:
     // 1. ForceAuthn="true" was not specified on the authentication request
     // 2. we also have the username already populated because of the samling cookie
-    if (!info.login.forceAuthn && $('#signedInUser').text().trim().length > 0) {
-      $('#createResponse').trigger('click');
-      setTimeout(function() {
-        $('#postSAMLResponse').trigger('click');
-      }, 100);
-    }
+//     if (!info.login.forceAuthn && $('#signedInUser').text().trim().length > 0) {
+//       $('#createResponse').trigger('click');
+//       setTimeout(function() {
+//         $('#postSAMLResponse').trigger('click');
+//       }, 100);
+//     }
   });
 }
 
